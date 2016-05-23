@@ -1,5 +1,17 @@
 import React from "react";
 
+
+export default class Featured extends React.Component {
+  render() {
+    return (
+      <h1>This is Featured</h1>
+    );
+  }
+}
+
+
+/*import React from "react";
+
 import Article from "../components/Article";
 
 export default class Featured extends React.Component {
@@ -43,4 +55,4 @@ export default class Featured extends React.Component {
       </div>
     );
   }
-}
+}*/

@@ -1,5 +1,26 @@
 import React from "react";
 
+
+export default class Archives extends React.Component {
+  render() {
+    console.log(this.props);
+
+    const { params } = this.props;
+    console.log({params});
+    const { article } = params;
+    console.log({article});
+
+    return (
+      <div>
+        <h1>Archives: ({article})</h1>
+        <h1>Archives: ({this.props.params.article})</h1>
+      </div>
+    );
+  }
+}
+
+/*import React from "react";
+
 import Article from "../components/Article";
 
 export default class Archives extends React.Component {
@@ -28,4 +49,4 @@ export default class Archives extends React.Component {
       </div>
     );
   }
-}
+}*/
